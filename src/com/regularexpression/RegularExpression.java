@@ -1,9 +1,18 @@
 package com.regularexpression;
 
+/*
+@description: class to checking user first name 
+by regular expression
+
+@parameters: defining a method firstName() to
+check if first name is valid using regular expression 
+ */
+
 import java.util.*;
 import java.util.regex.*;
 public class RegularExpression {
 
+	//method to check user first name is valid or not by using regular expression
 	public static boolean firstName() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter First Name: ");
