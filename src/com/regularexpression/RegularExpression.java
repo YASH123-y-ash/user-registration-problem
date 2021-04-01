@@ -19,7 +19,8 @@ public class RegularExpression {
 		System.out.println("Enter minimum 8 Character password : ");
 		String password = sc.next();
 
-		if (Pattern.matches("[\\S]{8,}", password) && Pattern.matches(".*[A-Z].*", password) && Pattern.matches(".*[0-9].*", password)) {
+		if (Pattern.matches("[\\S]{8,}", password) && Pattern.matches(".*[A-Z].*", password) 
+				&& Pattern.matches(".*[0-9].*", password) && Pattern.matches(".*[\\W]{1}.*", password)) {
 			System.out.println("Password valid");
 			return true;
 		} else {
