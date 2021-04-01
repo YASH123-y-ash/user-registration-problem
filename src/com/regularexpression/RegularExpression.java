@@ -2,10 +2,10 @@ package com.regularexpression;
 
 /*
 @description: class to checking user password having 1 upper case
-by regular expression
+and atleast 1 number by regular expression
 
 @parameters: defining a method checkpassword() to
-check if phone number is valid using regular expression 
+check if password is valid using regular expression 
  */
 
 import java.util.*;
@@ -18,8 +18,8 @@ public class RegularExpression {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter minimum 8 Character password : ");
 		String password = sc.next();
-		
-		if (Pattern.matches("[\\S]{8,}", password) && Pattern.matches(".*[A-Z].*", password)) {
+
+		if (Pattern.matches("[\\S]{8,}", password) && Pattern.matches(".*[A-Z].*", password) && Pattern.matches(".*[0-9].*", password)) {
 			System.out.println("Password valid");
 			return true;
 		} else {
