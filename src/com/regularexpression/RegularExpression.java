@@ -13,7 +13,7 @@ import java.util.regex.*;
 public class RegularExpression {
 
 	// method for email validation by using regular expression
-		public static boolean email() {
+		public static boolean emailCheck() {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter email: ");
 			String email = sc.next();
@@ -23,11 +23,11 @@ public class RegularExpression {
 				return true;
 			} else {
 				System.out.println("invalid");
-				return email();
+				return emailCheck();
 			}
 		}
 
 		public static void main(String[] args) {
-			email();
+			emailCheck();
 		}
-} 
+	} 
